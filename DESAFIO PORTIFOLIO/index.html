@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio Pessoal</title>
+</head>
+<body style="margin: 0; font-family: Arial, sans-serif;">
+
+  <!-- Header fixo com navegação -->
+  <header style="position: fixed; top: 0; width: 100%; background-color: #333; color: white; padding: 10px; text-align: center; z-index: 1000;">
+    <h2 style="margin: 0;">Meu Portfólio</h2>
+    <nav>
+      <a href="#introducao" style="margin: 0 10px; color: white; text-decoration: none;">Introdução</a>
+      <a href="#habilidades" style="margin: 0 10px; color: white; text-decoration: none;">Habilidades</a>
+      <a href="#projetos" style="margin: 0 10px; color: white; text-decoration: none;">Projetos</a>
+      <a href="#contato" style="margin: 0 10px; color: white; text-decoration: none;">Contato</a>
+    </nav>
+  </header>
+
+  <main style="margin-top: 120px;">
+
+    <!-- Introdução -->
+    <section id="introducao" style="background-color: #f0f8ff; padding: 40px; margin-bottom: 30px;">
+      <div style="background-image: url('https://via.placeholder.com/1200x200'); background-size: cover; padding: 20px;">
+        <h1 style="font-size: 2.5em; text-align: center;">Meu nome é Lucas</h1>
+        <p style="text-align: center;">
+          Sou um <span style="color: darkblue;">desenvolvedor</span> com paixão por <span style="color: darkgreen;">tecnologia</span> e <span style="color: darkred;">criatividade</span>.
+        </p>
+      </div>
+    </section>
+
+    <hr>
+
+    <!-- Habilidades -->
+    <section id="habilidades" style="background-color: #e6ffe6; padding: 40px; margin-bottom: 30px;">
+      <h2 style="font-size: 2em; text-align: left;">Habilidades</h2>
+      <ul>
+        <li><span style="color: blue;">HTML5</span></li>
+        <li><span style="color: green;">CSS3</span></li>
+        <li><span style="color: blue;">JavaScript</span></li>
+        <li><span style="color: green;">TypeScript</span></li>
+        <li><span style="color: blue;">Git e GitHub</span></li>
+      </ul>
+    </section>
+
+    <hr>
+
+    <!-- Projetos -->
+    <section id="projetos" style="background-color: #fff0f5; padding: 40px; margin-bottom: 30px;">
+      <h2 style="font-size: 2em; text-align: center;">Projetos</h2>
+      <div style="border: 2px solid #ff69b4; padding: 20px; margin-bottom: 20px;">
+        <h3>Projeto 1</h3>
+        <p>Site de portfólio criado com HTML e CSS.</p>
+        <a href="#">Ver Projeto</a>
+      </div>
+      <div style="border: 2px solid #8a2be2; padding: 20px;">
+        <h3>Projeto 2</h3>
+        <p>To-do app com React e localStorage.</p>
+        <a href="#">Ver Projeto</a>
+      </div>
+    </section>
+
+    <hr>
+
+    <!-- Contato -->
+    <section id="contato" style="background-color: #ffffe0; padding: 40px; margin-bottom: 30px;">
+      <h2 style="font-size: 2em;">Contato</h2>
+      <form>
+        <label for="nome">Nome:</label><br>
+        <input type="text" id="nome" name="nome" required><br><br>
+
+        <label for="email">E-mail:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="mensagem">Mensagem:</label><br>
+        <textarea id="mensagem" name="mensagem" required></textarea><br><br>
+
+        <label for="conheceu">Como nos conheceu?</label><br>
+        <select id="conheceu" name="conheceu">
+          <option value="google">Google</option>
+          <option value="redes">Redes Sociais</option>
+          <option value="amigo">Indicação de Amigo</option>
+        </select><br><br>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer style="background-color: #333; color: white; text-align: center; padding: 10px;">
+    <p>© 2025 - Criado por Lucas Florão | 📧 <a href="lucassk8.machado@gmail.comcom" style="color: lightblue;">CLIQUE AQUI</a></p>
+  </footer>
+
+</body>
+</html>
