@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: blue;
+}
+
+footer {
+    position: fixed; bottom: 0; left: 0; width: 100%;
+     
+    background: #0d064d;
+    background: linear-gradient(90deg, rgba(13, 6, 77, 1) 100%, rgba(18, 5, 120, 1) 100%, rgba(18, 5, 120, 1) 100%); color: aliceblue; padding: 10px;
+    text-align: center;
+  }
+  
+
+header {
+    position: fixed; top: 0; left: 0; width: 100%; 
+    background: #0d064d;
+    background: linear-gradient(90deg, rgba(13, 6, 77, 1) 100%, rgba(18, 5, 120, 1) 100%, rgba(18, 5, 120, 1) 100%); color: aliceblue; padding: 5px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  ul{
+  display: flex;
+  list-style: none;
+  gap: 24px;
+  }
+  li {
+      position: relative;
+      text-decoration: none;
+      color: aliceblue;
+      font-size: 18px;
+      padding: 4px 0;
+      cursor: pointer;
+      font-family: 'Courier New', Courier, monospace;
+      font-weight: 700;
+  }
+  li::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background-color: aliceblue;
+      transition: width 0.3s ease-in-out;
+    }
+    
+    li:hover::after {
+      width: 100%;
+    }
+    .container {
+      left: 850px;
+      top: 100px;
+      position: absolute;
+    }
+    
+    h2 {
+        position: absolute;
+        top: 30%;
+        left: 19%;
+        transform: translate(-50%, -50%);
+        font-family: 'Montserrat', sans-serif;
+        font-size: 26px;
+        color: #fff;
+      }
+      
+      h1 {
+        position: absolute;
+        top: 40%;
+        left: 20%;
+        transform: translate(-50%, -50%);
+        font-family: 'Montserrat', sans-serif;
+        font-size: 36px;
+        color: #fff;
+        animation: pulse 2s infinite;
+      }
+      
+      @keyframes pulse {
+        0% {
+          color: #fff;
+        }
+        50% {
+          color: #0d064d;
+        }
+        100% {
+          color: #fff;
+        }
+      }
+      .menu {
+        position: relative;
+        display: flex;
+        list-style: none;
+        left: 485px;
+      }
