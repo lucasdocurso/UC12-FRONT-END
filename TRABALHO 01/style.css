@@ -1,0 +1,108 @@
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #E8F5E9;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+.site-header {
+  background: linear-gradient(90deg, #19572c, #333036);
+  width: 100%;
+  position: fixed;
+  top: 0; left: 0;
+  z-index: 1000;
+}
+.site-header .wrapper {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+.site-header .logo img {
+  width: 80px;
+  height: auto;
+}
+.nav ul {
+  display: flex;
+  gap: 1.5rem;
+}
+.nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: bold;
+  position: relative;
+}
+.nav a::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #fff;
+  transition: width 0.3s;
+}
+.nav a:hover::after,
+.nav a:focus::after {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .nav ul {
+    display: none;
+    flex-direction: column;
+    background: #19572c;
+    position: absolute;
+    top: 100%;
+    right: 1rem;
+    padding: 1rem;
+    border-radius: 4px;
+  }
+  .nav.active ul { display: flex; }
+  .menu-toggle {
+    display: block;
+    cursor: pointer;
+  }
+}
+
+main {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 4rem;
+}
+h1 { font-size: 2.5rem; color: #19572c; margin-bottom: 0.5rem; }
+h2 {
+  font-size: 1.8rem;
+  color: #333;
+  animation: pulse 2s infinite;
+}
+@keyframes pulse {
+  0%,100% { color: #19572c; }
+  50% { color: #4CAF50; }
+}
+.botao {
+  display: inline-block;
+  padding: 1rem 2rem;
+  margin-top: 1.5rem;
+  font-size: 1.4rem;
+  background: #4CAF50;
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+.botao:hover,
+.botao:focus {
+  background: #3e8e41;
+}

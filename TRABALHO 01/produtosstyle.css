@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f0f8f2;
+    padding-top: 4rem;
+  }
+  
+  .site-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: linear-gradient(90deg, #19572c, #333036);
+    z-index: 10;
+  }
+  .wrapper {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+  }
+  .nav ul {
+    display: flex;
+    gap: 2rem;
+  }
+  .nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+  }
+  .nav a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transition: width 0.3s;
+  }
+  .nav a:hover::after,
+  .nav a:focus::after {
+    width: 100%;
+  }
+  .logo img {
+    height: 40px;
+    width: auto;
+  }
+  
+  .produtos-page {
+    max-width: 1200px;
+    margin: auto;
+    padding: 1rem;
+    text-align: center;
+    margin-top: 2rem;
+  }
+  .produtos-page h1 {
+    font-size: 2.5rem;
+    color: #19572c;
+    margin-bottom: 1rem;
+  }
+  
+  .produtos-row {
+    display: flex;
+    gap: 1rem;
+    overflow-x: auto;
+    padding-bottom: 1rem;
+    scroll-behavior: smooth;
+  }
+  
+  .produtos-row::-webkit-scrollbar {
+    height: 8px;
+  }
+  .produtos-row::-webkit-scrollbar-thumb {
+    background-color: #19572c;
+    border-radius: 4px;
+  }
+  
+  .produto-card {
+    background: #fff;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    min-width: 180px;
+    flex-shrink: 0; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: box-shadow 0.3s;
+    cursor: pointer;
+  }
+  .produto-card:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .produto-img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    border-radius: 4px;
+    overflow: hidden;
+    background: #f9f9f9;
+    margin-bottom: 0.8rem;
+  }
+  .produto-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  
+  .produto-nome {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 0.3rem;
+  }
+  .produto-preco {
+    color: #4caf50;
+    font-weight: bold;
+    margin-bottom: 0.2rem;
+  }
+  .produto-estoque {
+    font-size: 0.9rem;
+    color: #777;
+  }
+  
+  @media (max-width: 600px) {
+    .produtos-page h1 {
+      font-size: 2rem;
+    }
+    .produto-card {
+      min-width: 140px;
+      padding: 0.8rem;
+    }
+    .produto-nome {
+      font-size: 1rem;
+    }
+  }
+  
