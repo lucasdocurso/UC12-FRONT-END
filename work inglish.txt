@@ -1,0 +1,62 @@
+-----------------------------------------------------------
+1.
+a) milestones
+b) deliverables
+c) constraints
+d) requirements
+e) scope
+f) stakeholders
+
+----------------------------------------------------------
+2.
+
+a)task organization project in JAVA.
+
+b)communication and bug fixing.
+
+c)Trello and Miro
+
+d)for now, no
+
+----------------------------------------------------------
+
+3.
+a) backlog
+b) planning
+c) sprint
+d) master
+e) shippable
+f) review
+g) chunk
+----------------------------------------------------------
+4.
+a) iterative
+b) holistic
+c) challenge
+d) synchronize
+e) shipped
+f) artefacts
+g) show
+h) incremental
+----------------------------------------------------------
+5.
+a) Agile is iterative and flexible; Waterfall is linear and fixed.
+b) Agile, because it allows for constant adaptations.
+c) Revolution — promotes fast deliveries and customer focus.
+d) I like transparency; I hate the daily repetition of meetings.
+e) Solid technical documentation.
+f) Regulatory or traditional engineering projects.
+----------------------------------------------------------
+6.
+Arguments in favor of Agile/Scrum:
+Fast deliveries
+Easy adaptation
+Better collaboration
+
+Arguments against Scrum:
+Too many meetings
+Not all projects allow for changes
+Difficulty in predicting deadlines
+----------------------------------------------------------
+
+
