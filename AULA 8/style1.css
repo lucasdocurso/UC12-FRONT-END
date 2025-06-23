@@ -24,4 +24,8 @@ form {
     cursor: pointer;
     border-radius: 5px;
   }
+  h1 {
+    text-align: center;
+    color: #00bcd4;
+  }
   
